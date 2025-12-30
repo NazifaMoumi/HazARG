@@ -1,0 +1,13 @@
+name: hazarg
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python>=3.9
+  - numpy>=1.21
+  - biopython>=1.80
+  - matplotlib>=3.5
+  - mmseqs2
+  - pip
+  - pip:
+      - -e .

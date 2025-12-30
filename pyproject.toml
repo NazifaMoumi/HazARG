@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hazarg"
+version = "0.1.0"
+description = "Hazard index pipeline for ARG genomic contexts"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.21",
+  "biopython>=1.80",
+  "matplotlib>=3.5",
+]
+authors = [{name="Moumi"}]
+readme = "README.md"
+
+[project.scripts]
+hazarg = "cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
